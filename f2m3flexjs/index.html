@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les2</title>
+</head>
+<body>
+    <h1>mijn pagina</h1>
+    <p>maak geel</p>
+    <p>maak groen</p>
+    <p>maak oranje</p>
+    <div>Reset</div>
+
+    <!-- <input type="button" value="reset" id="my button"> -->
+
+    <script>
+        let reset = document.getElementsByTagName('div');  
+        let alineas = document.getElementsByTagName('p');
+        // const myButton = document.getElementById('myButton');
+        
+        let colors = ['yellow','green','orange'];
+        let bodyColors = ['gray', 'purple', 'midnightblue'];
+        let colors2 = ['blue','red','cyan'];
+
+        for(let i=0; i<alineas.length;i++){
+            alineas[i].addEventListener('click', (evt) =>{   
+                setAchtergrond(i);           
+            });
+        }
+
+        reset[0].addEventListener ('click', ()=>{
+            alineas[0].style.background = "white"
+            alineas[0].style.color = "black"
+            body[0].style.bodyColors = "white"
+        });
+
+        reset[0].addEventListener ('click', ()=>{
+            alineas[1].style.background = "white"
+            alineas[1].style.color = "black"
+            body[1].style.bodyColors = "white"
+        });
+
+        reset[0].addEventListener ('click', ()=>{
+            alineas[2].style.background = "white"
+            alineas[2].style.color = "black"
+            body[2].style.bodyColors = "white"
+        });
+
+        function setAchtergrond(i){
+            alineas[i].style.background = colors[i]  
+            alineas[i].style.color = colors2[i]
+            document.body.style.background = bodyColors[i];
+
+        }
+
+        // myButton.addEventListener('click', () => {
+        //     for(let i=0; i<alineas.length;i++){
+        //         alineas[i].style.background = "white";
+        //     };
+        //     document.body.style.background = "white"
+        // });
+
+
+
+
+
+
+
+
+
+
+        // Ander code
+
+        // let myP = document.getElementsByTagName('p');
+
+        // myP[0].addEventListener('click', clickHandler0);
+        // myP[1].addEventListener('click', clickHandler1);
+        // myP[2].addEventListener('click', clickHandler2);
+        // // document.body.addEventListener('click', clickHandler);
+
+        // function clickHandler0(){
+        //     document.body.style.background = "red";
+        // }
+
+        // function clickHandler1(){
+        //     document.body.style.background = "green";
+        // }
+
+        // function clickHandler2(){
+        //     document.body.style.background = "orange";
+        // }
+        // let myP = document.getElementsByTagName('p');
+        // document.body.style.background = "green";
+        // document.body.style.color = "white";
+        // document.getElementsByTagName('p')[0].style.background = "yellow";
+        // document.getElementsByTagName('p')[1].style.color = "black";
+        // document.getElementsByTagName('p')[2].style.background = "red";
+    </script>
+</body>
+</html>
