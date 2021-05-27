@@ -13,12 +13,12 @@
     <p>maak oranje</p>
     <div>Reset</div>
 
-    <!-- <input type="button" value="reset" id="my button"> -->
+    <input type="button" value="reset" id="myButton">
 
     <script>
         let reset = document.getElementsByTagName('div');  
         let alineas = document.getElementsByTagName('p');
-        // const myButton = document.getElementById('myButton');
+        const myButton = document.getElementById('myButton');
         
         let colors = ['yellow','green','orange'];
         let bodyColors = ['gray', 'purple', 'midnightblue'];
@@ -55,12 +55,12 @@
 
         }
 
-        // myButton.addEventListener('click', () => {
-        //     for(let i=0; i<alineas.length;i++){
-        //         alineas[i].style.background = "white";
-        //     };
-        //     document.body.style.background = "white"
-        // });
+        myButton.addEventListener('click', () => {
+            for(let i=0; i<alineas.length;i++){
+                alineas[i].style.background = "white";
+            };
+            document.body.style.background = "white"
+        });
 
 
 
