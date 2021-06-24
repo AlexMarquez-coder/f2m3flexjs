@@ -1,0 +1,45 @@
+body{
+    background-color: midnightblue;
+    text-align: center;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Fonts/karmatic-arcade/ka1.ttf);
+}
+
+#container {
+    width: 25em;
+    height: 15em;
+    margin: auto;
+    margin-top: 20em;
+    border-radius: 20px;
+    padding: 1em;
+    border: purple 5px solid;
+    background: aliceblue;
+}
+
+#opgaveblad{
+    font-family: myFirstFont;
+    font-size: 30px;
+    background: skyblue;
+    height: 3em;
+    padding: 20px;
+}
+
+#antwoordenblad{
+    width: 100%;
+    margin: auto;
+    font-family: myFirstFont;
+    background: palegoldenrod;
+    color: black;
+}
+
+#input1 {
+    width: 10em; 
+    margin: auto; 
+    text-align: center;
+    background: lightcoral;
+    height: 2em;
+}
+
